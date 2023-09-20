@@ -1,0 +1,169 @@
+/* Game board styling */
+#game-board {
+    display: grid;
+    gap: 5px;
+    width: 330px; /* Adjust as needed */
+    min-height: 330px; /* Adjust as needed */
+    grid-template-columns: repeat(5, 1fr); /* Adjust as needed */
+    grid-template-rows: repeat(5, 1fr); /* Adjust as needed */
+    border: 2px solid #333;
+    background-color: yellow;
+}
+
+#game-area {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: stretch;
+    flex-direction: row;
+}
+
+#dice {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#addPlayer {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.tile {
+    background-color: gray !important;
+}
+
+.question-tile {
+    background-color: greenyellow !important;
+}
+
+#playerList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.spacer {
+    margin-bottom: 15px;
+}
+
+.pmargin {
+    margin-bottom: 5px;
+}
+
+.rmargin {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.dice-rotate {
+    animation: dice-roll 2s infinite;
+}
+
+@keyframes dice-roll {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/* Style the individual cells on the game board */
+#game-board div {
+    background-color: rgb(245, 245, 84);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Player token styling */
+.player-piece {
+    width: 10px;
+    height: 10px;
+    border-radius: 30%;
+}
+/* Styling for the question box */
+#question-box {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    border: 2px solid #333;
+    text-align: center;
+}
+
+#add-player-box {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: yellow;
+    border: 2px solid #333;
+    text-align: center;
+}
+
+#question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling for answer buttons */
+.answer {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007bff; /* Blue color for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f78c;
+}
+/* Additional styling can be added as needed */
